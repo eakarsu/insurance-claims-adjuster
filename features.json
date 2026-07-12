@@ -1,0 +1,6667 @@
+[
+  {
+    "name": "AI Evaluate",
+    "canonicalKey": "ai evaluate",
+    "aliases": [
+      "Evaluate AI"
+    ],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-evaluate",
+      "/:id/evaluate-ai"
+    ],
+    "sourceProjects": [
+      "AIAccessibilityAuditAgent",
+      "AICarbonCreditMarketplaceVerifier",
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation",
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "backend/routes/wcagChecks.js:92",
+        "route": "/:id/evaluate-ai",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/claims.js:60",
+        "route": "/:id/ai-evaluate",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICarbonCreditMarketplaceVerifier",
+        "path": "server/routes/projects.js:57",
+        "route": "/:id/ai-evaluate",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "AI Investigate",
+    "canonicalKey": "ai investigate",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-investigate"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/fraudDetection.js:60",
+        "route": "/:id/ai-investigate",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "AI Optimize",
+    "canonicalKey": "ai optimize",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-optimize"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/premiumCalculator.js:54",
+        "route": "/:id/ai-optimize",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "AI Predict",
+    "canonicalKey": "ai predict",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-predict",
+      "/ai-predict"
+    ],
+    "sourceProjects": [
+      "AIAntiFraud",
+      "AICarbonCreditMarketplaceVerifier",
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/lossRatio.js:54",
+        "route": "/:id/ai-predict",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAntiFraud",
+        "path": "server/routes/chargebacks.js:146",
+        "route": "/:id/ai-predict",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICarbonCreditMarketplaceVerifier",
+        "path": "server/routes/marketdata.js:48",
+        "route": "/ai-predict",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "AI Recommend",
+    "canonicalKey": "ai recommend",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-recommend",
+      "/ai-recommend"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/policies.js:61",
+        "route": "/ai-recommend",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/renewals.js:60",
+        "route": "/:id/ai-recommend",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "AI Suggest",
+    "canonicalKey": "ai suggest",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/ai-suggest"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/underwritingRules.js:54",
+        "route": "/:id/ai-suggest",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Adjuster Name",
+    "canonicalKey": "adjuster name",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:202",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Adjuster Performance",
+    "canonicalKey": "adjuster performance",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/adjuster-performance"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:306",
+        "route": "/adjuster-performance",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:197",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Adjuster Workload Balancing",
+    "canonicalKey": "adjuster balancing workload",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/adjuster-workload-balancing"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:495",
+        "route": "/adjuster-workload-balancing",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Adjusters",
+    "canonicalKey": "adjuster",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/adjusters"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:92",
+        "route": "/adjusters",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Advance",
+    "canonicalKey": "advance",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/advance"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/uwWorkflow.js:72",
+        "route": "/:id/advance",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Agent Portal",
+    "canonicalKey": "agent portal",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/AgentPortal",
+      "/agent-portal"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:28",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:64",
+        "route": "/agent-portal",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/AgentPortal.jsx",
+        "route": "/AgentPortal",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Agentic Underwriting",
+    "canonicalKey": "agentic underwriting",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/AgenticUnderwriting",
+      "/agentic-underwriting"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:31",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:67",
+        "route": "/agentic-underwriting",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/AgenticUnderwriting.jsx",
+        "route": "/AgenticUnderwriting",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Agents Brokers",
+    "canonicalKey": "agents broker",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:13",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Aisha Rahman",
+    "canonicalKey": "aisha rahman",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:192",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Angry Customer Email",
+    "canonicalKey": "angry customer email",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:118",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Appetite Drift",
+    "canonicalKey": "appetite drift",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:33",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Appetite Drift Monitor",
+    "canonicalKey": "appetite drift monitor",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/AppetiteDriftMonitor",
+      "/appetite-drift-monitor"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:61",
+        "route": "/appetite-drift-monitor",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/AppetiteDriftMonitor.jsx",
+        "route": "/AppetiteDriftMonitor",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Audit Analysis",
+    "canonicalKey": "analysis audit",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/audit-analysis"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:340",
+        "route": "/audit-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:233",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Audit Entries Summary",
+    "canonicalKey": "audit entries summary",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:237",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Audit Exports",
+    "canonicalKey": "audit export",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:23",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Auto Assign",
+    "canonicalKey": "assign auto",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/auto-assign"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:374",
+        "route": "/auto-assign",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Auto Assign Adjuster",
+    "canonicalKey": "adjuster assign auto",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:264",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Auto Claims National",
+    "canonicalKey": "auto claims national",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:136",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Auto Total Loss",
+    "canonicalKey": "auto loss total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:70",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Available Adjusters",
+    "canonicalKey": "adjuster available",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:272",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Avg Resolution Days",
+    "canonicalKey": "avg days resolution",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:206",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Billing Payments",
+    "canonicalKey": "billing payment",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:18",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Book",
+    "canonicalKey": "book",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/book"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/agentPortal.js:31",
+        "route": "/book",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cession Report",
+    "canonicalKey": "cession report",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cession-report"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/reinsurance.js:54",
+        "route": "/cession-report",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cession Report Csv",
+    "canonicalKey": "cession csv report",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cession-report.csv"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/reinsurance.js:99",
+        "route": "/cession-report.csv",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Adjuster Workload Balancing Using Capaci",
+    "canonicalKey": "adjuster balancing capaci cf using workload",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfAdjusterWorkloadBalancingUsingCapaci",
+      "/cf-adjuster-workload-balancing-using-capaci"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:114",
+        "route": "/cf-adjuster-workload-balancing-using-capaci",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfAdjusterWorkloadBalancingUsingCapaci.jsx",
+        "route": "/CfAdjusterWorkloadBalancingUsingCapaci",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Agentic Claims Triage Auto Routing By",
+    "canonicalKey": "agentic auto by cf claims routing triage",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfAgenticClaimsTriageAutoRoutingBy",
+      "/cf-agentic-claims-triage-auto-routing-by"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:110",
+        "route": "/cf-agentic-claims-triage-auto-routing-by",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfAgenticClaimsTriageAutoRoutingBy.jsx",
+        "route": "/CfAgenticClaimsTriageAutoRoutingBy",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Agentic Underwriting Automation Handling",
+    "canonicalKey": "agentic automation cf handling underwriting",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfAgenticUnderwritingAutomationHandling",
+      "/cf-agentic-underwriting-automation-handling"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:70",
+        "route": "/cf-agentic-underwriting-automation-handling",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfAgenticUnderwritingAutomationHandling.jsx",
+        "route": "/CfAgenticUnderwritingAutomationHandling",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Computer Vision Damage Assessment From M",
+    "canonicalKey": "assessment cf computer damage from m vision",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfComputerVisionDamageAssessmentFromM",
+      "/cf-computer-vision-damage-assessment-from-m"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:111",
+        "route": "/cf-computer-vision-damage-assessment-from-m",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfComputerVisionDamageAssessmentFromM.jsx",
+        "route": "/CfComputerVisionDamageAssessmentFromM",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Customer Ltv Retention Predicting Post C",
+    "canonicalKey": "c cf customer ltv post predicting retention",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfCustomerLtvRetentionPredictingPostC",
+      "/cf-customer-ltv-retention-predicting-post-c"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:115",
+        "route": "/cf-customer-ltv-retention-predicting-post-c",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfCustomerLtvRetentionPredictingPostC.jsx",
+        "route": "/CfCustomerLtvRetentionPredictingPostC",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Customer Risk Trajectory Modeling Over P",
+    "canonicalKey": "cf customer modeling over p risk trajectory",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfCustomerRiskTrajectoryModelingOverP",
+      "/cf-customer-risk-trajectory-modeling-over-p"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:73",
+        "route": "/cf-customer-risk-trajectory-modeling-over-p",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfCustomerRiskTrajectoryModelingOverP.jsx",
+        "route": "/CfCustomerRiskTrajectoryModelingOverP",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Fraud Ring Detection Correlating Claims",
+    "canonicalKey": "cf claim correlating detection fraud ring",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfFraudRingDetectionCorrelatingClaims",
+      "/cf-fraud-ring-detection-correlating-claims-"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:112",
+        "route": "/cf-fraud-ring-detection-correlating-claims-",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfFraudRingDetectionCorrelatingClaims.jsx",
+        "route": "/CfFraudRingDetectionCorrelatingClaims",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Fraud Syndicate Detection Correlating Ap",
+    "canonicalKey": "ap cf correlating detection fraud syndicate",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfFraudSyndicateDetectionCorrelatingAp",
+      "/cf-fraud-syndicate-detection-correlating-ap"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:71",
+        "route": "/cf-fraud-syndicate-detection-correlating-ap",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfFraudSyndicateDetectionCorrelatingAp.jsx",
+        "route": "/CfFraudSyndicateDetectionCorrelatingAp",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Predictive Settlement Optimization Model",
+    "canonicalKey": "cf model optimization predictive settlement",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfPredictiveSettlementOptimizationModel",
+      "/cf-predictive-settlement-optimization-model"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:113",
+        "route": "/cf-predictive-settlement-optimization-model",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/CfPredictiveSettlementOptimizationModel.jsx",
+        "route": "/CfPredictiveSettlementOptimizationModel",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Premium Dynamism Recommending Real Time",
+    "canonicalKey": "cf dynamism premium real recommending time",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfPremiumDynamismRecommendingRealTime",
+      "/cf-premium-dynamism-recommending-real-time-"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:72",
+        "route": "/cf-premium-dynamism-recommending-real-time-",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfPremiumDynamismRecommendingRealTime.jsx",
+        "route": "/CfPremiumDynamismRecommendingRealTime",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Renewals Optimization Predicting Likelih",
+    "canonicalKey": "cf likelih optimization predicting renewals",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfRenewalsOptimizationPredictingLikelih",
+      "/cf-renewals-optimization-predicting-likelih"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:74",
+        "route": "/cf-renewals-optimization-predicting-likelih",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfRenewalsOptimizationPredictingLikelih.jsx",
+        "route": "/CfRenewalsOptimizationPredictingLikelih",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Cf Rule Engine Optimization Recommending Up",
+    "canonicalKey": "cf engine optimization recommending rule up",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CfRuleEngineOptimizationRecommendingUp",
+      "/cf-rule-engine-optimization-recommending-up"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:75",
+        "route": "/cf-rule-engine-optimization-recommending-up",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CfRuleEngineOptimizationRecommendingUp.jsx",
+        "route": "/CfRuleEngineOptimizationRecommendingUp",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Channel",
+    "canonicalKey": "channel",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:115",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Amount",
+    "canonicalKey": "amount claim",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:14",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:65",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Analysis",
+    "canonicalKey": "analysis claim",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/claim-analysis"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:255",
+        "route": "/claim-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:142",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Description",
+    "canonicalKey": "claim description",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:13",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:269",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:64",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:99",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim History Summary",
+    "canonicalKey": "claim history summary",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:187",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Number",
+    "canonicalKey": "claim number",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:147",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Severity Leakage Audit",
+    "canonicalKey": "audit claim leakage severity",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/ClaimSeverityLeakageAudit",
+      "/claim-severity-leakage-audit"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:107",
+        "route": "/claim-severity-leakage-audit",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/ClaimSeverityLeakageAudit.jsx",
+        "route": "/ClaimSeverityLeakageAudit",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Status Pipeline",
+    "canonicalKey": "claim pipeline status",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/claim-status-pipeline"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customViews.js:48",
+        "route": "/claim-status-pipeline",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claim Type",
+    "canonicalKey": "claim type",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:129",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:148",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:15",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:268",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claims Forecasting",
+    "canonicalKey": "claims forecasting",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/claims-forecasting"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:238",
+        "route": "/claims-forecasting",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:125",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:100",
+        "route": "/claims-forecasting",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claims History",
+    "canonicalKey": "claims history",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/rating-bureau/claims-history"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/integrations.js:25",
+        "route": "/rating-bureau/claims-history",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Claims Processing",
+    "canonicalKey": "claims processing",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:4",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Commercial Fleet Policy",
+    "canonicalKey": "commercial fleet policy",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:174",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Complex Liability Claim",
+    "canonicalKey": "claim complex liability",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:154",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Compliance Monitoring",
+    "canonicalKey": "compliance monitoring",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:10",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Confused Customer Chat",
+    "canonicalKey": "chat confused customer",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:120",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Coverage Amount",
+    "canonicalKey": "amount coverage",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:49",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Coverage Details",
+    "canonicalKey": "coverage",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:98",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Coverage Limit",
+    "canonicalKey": "coverage limit",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:168",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Current Status",
+    "canonicalKey": "current status",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:151",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Customer Analysis",
+    "canonicalKey": "analysis customer",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/customer-analysis"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:289",
+        "route": "/customer-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:179",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Customer Info",
+    "canonicalKey": "customer info",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:170",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:47",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Customer Ltv Retention",
+    "canonicalKey": "customer ltv retention",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/customer-ltv-retention"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:520",
+        "route": "/customer-ltv-retention",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Customer Name",
+    "canonicalKey": "customer name",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:113",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:184",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Customer Portal",
+    "canonicalKey": "customer portal",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/CustomerPortal",
+      "/customer-portal",
+      "/features/customer-portal"
+    ],
+    "sourceProjects": [
+      "AICreditRiskAssessmentAgent",
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:27",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:63",
+        "route": "/customer-portal",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/CustomerPortal.jsx",
+        "route": "/CustomerPortal",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICreditRiskAssessmentAgent",
+        "path": "frontend/src/components/Layout.jsx:40",
+        "route": "/features/customer-portal",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Customer Sentiment",
+    "canonicalKey": "customer sentiment",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/customer-sentiment"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:216",
+        "route": "/customer-sentiment",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:108",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:99",
+        "route": "/customer-sentiment",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Damage Assessment",
+    "canonicalKey": "assessment damage",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/damage-assessment"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:73",
+        "route": "/damage-assessment",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:25",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:94",
+        "route": "/damage-assessment",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Damage Assessment Notes",
+    "canonicalKey": "assessment damage note",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:67",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Damage Description",
+    "canonicalKey": "damage description",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:30",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Damage Type",
+    "canonicalKey": "damage type",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:31",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Data Category",
+    "canonicalKey": "category data",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:252",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Data Summary",
+    "canonicalKey": "data summary",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:253",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "David Martinez",
+    "canonicalKey": "david martinez",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:120",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Deductible",
+    "canonicalKey": "deductible",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:169",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Description",
+    "canonicalKey": "description",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:149",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Disburse",
+    "canonicalKey": "disburse",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/payments/disburse"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/integrations.js:31",
+        "route": "/payments/disburse",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Document Analysis",
+    "canonicalKey": "analysis document",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/document-analysis"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AIMortgageUnderwritingAssistant",
+      "AIWealthManagementRoboAdvisor"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/trading-merged"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWealthManagementRoboAdvisor",
+        "path": "server/routes/ai.js:457",
+        "route": "/document-analysis",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:175",
+        "route": "/document-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:76",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:97",
+        "route": "/document-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:9",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMortgageUnderwritingAssistant",
+        "path": "server/routes/ai.js:169",
+        "route": "/document-analysis",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Document Text",
+    "canonicalKey": "document text",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:81",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Document Type",
+    "canonicalKey": "document type",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:82",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Entity Type",
+    "canonicalKey": "entity type",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:239",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Estimate",
+    "canonicalKey": "estimate",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/estimate"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/cvDamageEstimator.js:39",
+        "route": "/estimate",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Estimated Amount",
+    "canonicalKey": "amount estimated",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:150",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Experience Years",
+    "canonicalKey": "experience year",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:204",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Feature Page",
+    "canonicalKey": "feature page",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/FeaturePage"
+    ],
+    "sourceProjects": [
+      "AIAccessibilityAuditAgent",
+      "AIDebtCollectionOptimizer",
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AISOXAuditAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation",
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAccessibilityAuditAgent",
+        "path": "frontend/src/pages/FeaturePage.js",
+        "route": "/FeaturePage",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "client/src/pages/FeaturePage.jsx",
+        "route": "/FeaturePage",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/FeaturePage.jsx",
+        "route": "/FeaturePage",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/FeaturePage.jsx",
+        "route": "/FeaturePage",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "client/src/pages/FeaturePage.jsx",
+        "route": "/FeaturePage",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Flood Damage Home Policy",
+    "canonicalKey": "damage flood home policy",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:102",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Fraud Detection",
+    "canonicalKey": "detection fraud",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/FraudDetection",
+      "/ai/fraud-detection",
+      "/cf/fraud-detection",
+      "/fraud-detection"
+    ],
+    "sourceProjects": [
+      "AICreditRiskAssessmentAgent",
+      "AIDebtCollectionOptimizer",
+      "AIExpenseReportAuditor",
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AIMortgageUnderwritingAssistant",
+      "aiFinancePlatform"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/invoice-processing"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/App.jsx:208",
+        "route": "/ai/fraud-detection",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/App.jsx:70",
+        "route": "/ai/fraud-detection",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/pages/Dashboard.jsx:28",
+        "route": "/ai/fraud-detection",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:50",
+        "route": "/fraud-detection",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:8",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:93",
+        "route": "/fraud-detection",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:7",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "aiFinancePlatform",
+        "path": "frontend/src/components/Sidebar.js:54",
+        "route": "",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "aiFinancePlatform",
+        "path": "frontend/src/App.js:178",
+        "route": "/fraud-detection",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "aiFinancePlatform",
+        "path": "frontend/src/pages/FraudDetection.js",
+        "route": "/FraudDetection",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICreditRiskAssessmentAgent",
+        "path": "backend/src/routes/ai.js:222",
+        "route": "/fraud-detection",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICreditRiskAssessmentAgent",
+        "path": "frontend/src/pages/FraudDetection.jsx",
+        "route": "/FraudDetection",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "client/src/App.jsx:99",
+        "route": "/cf/fraud-detection",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMortgageUnderwritingAssistant",
+        "path": "server/routes/ai.js:133",
+        "route": "/fraud-detection",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Fraud Risk Heatmap",
+    "canonicalKey": "fraud heatmap risk",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/fraud-risk-heatmap"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customViews.js:84",
+        "route": "/fraud-risk-heatmap",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Frequent Claimant",
+    "canonicalKey": "claimant frequent",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:191",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap Live Rating Bureau Integration Still Sca",
+    "canonicalKey": "bureau gap integration live rating sca still",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapLiveRatingBureauIntegrationStillSca",
+      "/gap-live-rating-bureau-integration-still-sca"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:82",
+        "route": "/gap-live-rating-bureau-integration-still-sca",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapLiveRatingBureauIntegrationStillSca.jsx",
+        "route": "/GapLiveRatingBureauIntegrationStillSca",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No AI Premium Rate Recommender",
+    "canonicalKey": "ai gap no premium rate recommender",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoAiPremiumRateRecommender",
+      "/gap-no-ai-premium-rate-recommender"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:77",
+        "route": "/gap-no-ai-premium-rate-recommender",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoAiPremiumRateRecommender.jsx",
+        "route": "/GapNoAiPremiumRateRecommender",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No E Signature For Binderspolicies",
+    "canonicalKey": "binderspolicy e for gap no signature",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoESignatureForBinderspolicies",
+      "/gap-no-e-signature-for-binderspolicies"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:85",
+        "route": "/gap-no-e-signature-for-binderspolicies",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoESignatureForBinderspolicies.jsx",
+        "route": "/GapNoESignatureForBinderspolicies",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No E Signature For Settlements",
+    "canonicalKey": "e for gap no settlement signature",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoESignatureForSettlements",
+      "/gap-no-e-signature-for-settlements"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:122",
+        "route": "/gap-no-e-signature-for-settlements",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoESignatureForSettlements.jsx",
+        "route": "/GapNoESignatureForSettlements",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No File Upload For Supporting Documents",
+    "canonicalKey": "document file for gap no supporting upload",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoFileUploadForSupportingDocuments",
+      "/gap-no-file-upload-for-supporting-documents"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:84",
+        "route": "/gap-no-file-upload-for-supporting-documents",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoFileUploadForSupportingDocuments.jsx",
+        "route": "/GapNoFileUploadForSupportingDocuments",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Fraud Probability AI",
+    "canonicalKey": "ai fraud gap no probability",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoFraudProbabilityAi",
+      "/gap-no-fraud-probability-ai"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:78",
+        "route": "/gap-no-fraud-probability-ai",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoFraudProbabilityAi.jsx",
+        "route": "/GapNoFraudProbabilityAi",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Image Based Vehicle Damage Estimator",
+    "canonicalKey": "based damage estimator gap image no vehicle",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoImageBasedVehicleDamageEstimator",
+      "/gap-no-image-based-vehicle-damage-estimator"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:119",
+        "route": "/gap-no-image-based-vehicle-damage-estimator",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoImageBasedVehicleDamageEstimator.jsx",
+        "route": "/GapNoImageBasedVehicleDamageEstimator",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Litigation Outcome Predictor",
+    "canonicalKey": "gap litigation no outcome predictor",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoLitigationOutcomePredictor",
+      "/gap-no-litigation-outcome-predictor"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:118",
+        "route": "/gap-no-litigation-outcome-predictor",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoLitigationOutcomePredictor.jsx",
+        "route": "/GapNoLitigationOutcomePredictor",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Mobile Push Notifications For Field",
+    "canonicalKey": "field for gap mobile no notifications push",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoMobilePushNotificationsForField",
+      "/gap-no-mobile-push-notifications-for-field"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:121",
+        "route": "/gap-no-mobile-push-notifications-for-field",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoMobilePushNotificationsForField.jsx",
+        "route": "/GapNoMobilePushNotificationsForField",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Notifications Module 0 References",
+    "canonicalKey": "0 gap no notifications reference",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/gap-no-notifications-module-0-references"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:123",
+        "route": "/gap-no-notifications-module-0-references",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Notifications Module0 References",
+    "canonicalKey": "gap module0 no notifications reference",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoNotificationsModule0References"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoNotificationsModule0References.jsx",
+        "route": "/GapNoNotificationsModule0References",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Policy Recommendation Engine",
+    "canonicalKey": "engine gap no policy recommendation",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoPolicyRecommendationEngine",
+      "/gap-no-policy-recommendation-engine"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:79",
+        "route": "/gap-no-policy-recommendation-engine",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoPolicyRecommendationEngine.jsx",
+        "route": "/GapNoPolicyRecommendationEngine",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Renewal Prediction Model",
+    "canonicalKey": "gap model no prediction renewal",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoRenewalPredictionModel",
+      "/gap-no-renewal-prediction-model"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:80",
+        "route": "/gap-no-renewal-prediction-model",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoRenewalPredictionModel.jsx",
+        "route": "/GapNoRenewalPredictionModel",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Reserve Estimation AI",
+    "canonicalKey": "ai estimation gap no reserve",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoReserveEstimationAi",
+      "/gap-no-reserve-estimation-ai"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:117",
+        "route": "/gap-no-reserve-estimation-ai",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoReserveEstimationAi.jsx",
+        "route": "/GapNoReserveEstimationAi",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Risk Score Endpoint Backed By",
+    "canonicalKey": "backed by endpoint gap no risk score",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoRiskScoreEndpointBackedBy",
+      "/gap-no-risk-score-endpoint-backed-by"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:76",
+        "route": "/gap-no-risk-score-endpoint-backed-by",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoRiskScoreEndpointBackedBy.jsx",
+        "route": "/GapNoRiskScoreEndpointBackedBy",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Rule Optimization Analyzer",
+    "canonicalKey": "analyzer gap no optimization rule",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoRuleOptimizationAnalyzer",
+      "/gap-no-rule-optimization-analyzer"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:81",
+        "route": "/gap-no-rule-optimization-analyzer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoRuleOptimizationAnalyzer.jsx",
+        "route": "/GapNoRuleOptimizationAnalyzer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Subrogation Recovery Optimizer",
+    "canonicalKey": "gap no optimizer recovery subrogation",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoSubrogationRecoveryOptimizer",
+      "/gap-no-subrogation-recovery-optimizer"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:116",
+        "route": "/gap-no-subrogation-recovery-optimizer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoSubrogationRecoveryOptimizer.jsx",
+        "route": "/GapNoSubrogationRecoveryOptimizer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Webhook Surface For Application Event",
+    "canonicalKey": "event for gap no surface webhook",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoWebhookSurfaceForApplicationEvent",
+      "/gap-no-webhook-surface-for-application-event"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:83",
+        "route": "/gap-no-webhook-surface-for-application-event",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/GapNoWebhookSurfaceForApplicationEvent.jsx",
+        "route": "/GapNoWebhookSurfaceForApplicationEvent",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Webhook Surface For Fnol Ingestion",
+    "canonicalKey": "fnol for gap ingestion no surface webhook",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoWebhookSurfaceForFnolIngestion",
+      "/gap-no-webhook-surface-for-fnol-ingestion"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:120",
+        "route": "/gap-no-webhook-surface-for-fnol-ingestion",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoWebhookSurfaceForFnolIngestion.jsx",
+        "route": "/GapNoWebhookSurfaceForFnolIngestion",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Gap No Websocket Real Time Claim Feed",
+    "canonicalKey": "claim feed gap no real time websocket",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapNoWebsocketRealTimeClaimFeed",
+      "/gap-no-websocket-real-time-claim-feed"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:124",
+        "route": "/gap-no-websocket-real-time-claim-feed",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/GapNoWebsocketRealTimeClaimFeed.jsx",
+        "route": "/GapNoWebsocketRealTimeClaimFeed",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Health Claims Annual",
+    "canonicalKey": "annual claims health",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:137",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "High Value Customer",
+    "canonicalKey": "customer high value",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:190",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "High Value Home Policy",
+    "canonicalKey": "high home policy value",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:52",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Historical Context",
+    "canonicalKey": "context historical",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:132",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "House Fire Damage",
+    "canonicalKey": "damage fire house",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:35",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Hurricane Season Forecast",
+    "canonicalKey": "forecast hurricane season",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:135",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Integration Center",
+    "canonicalKey": "integration",
+    "aliases": [
+      "Integration",
+      "Integration Page",
+      "Integrations"
+    ],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/Integration/IntegrationPage",
+      "/IntegrationCenter",
+      "/Integrations",
+      "/dashboard/integrations",
+      "/integration",
+      "/integration-center",
+      "/integrations",
+      "/sox-ops/integrations"
+    ],
+    "sourceProjects": [
+      "AIExpenseReportAuditor",
+      "AIFamilyOfficeManager",
+      "AIInsuranceUnderwritingAgent",
+      "AISOXAuditAutomation",
+      "cash_flow",
+      "financialServices"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/audit-workpaper-automation",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/invoice-processing",
+      "financial-services/revenue-recognition-engine",
+      "financial-services/trading-merged"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "client/src/components/Layout.jsx:17",
+        "route": "/sox-ops/integrations",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/App.jsx:102",
+        "route": "/integrations",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/App.jsx:236",
+        "route": "/integrations",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "client/src/pages/Integrations.jsx",
+        "route": "/Integrations",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cash_flow",
+        "path": "src/router/AppRouter.tsx:104",
+        "route": "/integration",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cash_flow",
+        "path": "src/pages/Integration/IntegrationPage.tsx",
+        "route": "/Integration/IntegrationPage",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIFamilyOfficeManager",
+        "path": "frontend/src/App.js:137",
+        "route": "/integrations",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:30",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:66",
+        "route": "/integration-center",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/IntegrationCenter.jsx",
+        "route": "/IntegrationCenter",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "financialServices",
+        "path": "src/components/layout/Sidebar.tsx:35",
+        "route": "",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "financialServices",
+        "path": "src/app/dashboard/integrations/page.tsx",
+        "route": "/dashboard/integrations",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      }
+    ]
+  },
+  {
+    "name": "Kevin Park",
+    "canonicalKey": "kevin park",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:210",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Key Metrics",
+    "canonicalKey": "key metric",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:255",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Leads",
+    "canonicalKey": "lead",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/leads"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/agentPortal.js:75",
+        "route": "/leads",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/agentPortal.js:89",
+        "route": "/leads",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Lisa Park",
+    "canonicalKey": "lisa park",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:119",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Location",
+    "canonicalKey": "location",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:271",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:32",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Lookup",
+    "canonicalKey": "lookup",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/iso-claimsearch/lookup"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/integrations.js:24",
+        "route": "/iso-claimsearch/lookup",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Loss Ratio Analysis",
+    "canonicalKey": "analysis loss ratio",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:12",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Major Fire Claim",
+    "canonicalKey": "claim fire major",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:275",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Marcus Johnson",
+    "canonicalKey": "johnson marcus",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:191",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Margaret O",
+    "canonicalKey": "margaret o",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:211",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Medical Claim Review",
+    "canonicalKey": "claim medical review",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:20",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Medical Report",
+    "canonicalKey": "medical report",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:86",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Message",
+    "canonicalKey": "message",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/message",
+      "/messages"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AIRevenueRecognitionEngine",
+      "AISOXAuditAutomation"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/revenue-recognition-engine"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/routes/systemChat.js:520",
+        "route": "/message",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRevenueRecognitionEngine",
+        "path": "backend/routes/systemChat.js:493",
+        "route": "/message",
+        "originApp": "financial-services/revenue-recognition-engine"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customerPortal.js:109",
+        "route": "/messages",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customerPortal.js:95",
+        "route": "/messages",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:114",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/chatbot.js:180",
+        "route": "/message",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Mine",
+    "canonicalKey": "mine",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/quotes/mine"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/customerPortal.js:66",
+        "route": "/quotes/mine",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Minor Auto Claim",
+    "canonicalKey": "auto claim minor",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:276",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Monthly Compliance Review",
+    "canonicalKey": "compliance monthly review",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:243",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Multi Vehicle Accident",
+    "canonicalKey": "accident multi vehicle",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:155",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "New Adjuster Review",
+    "canonicalKey": "adjuster review",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:210",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "New Customer Evaluation",
+    "canonicalKey": "customer evaluation",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:192",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Normal Settlement Payment",
+    "canonicalKey": "normal payment settlement",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:228",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Overall Business Health",
+    "canonicalKey": "business health overall",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:259",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Pass5 Tools",
+    "canonicalKey": "pass5",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/Pass5Tools",
+      "/pass5-tools"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:105",
+        "route": "/pass5-tools",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/pages/Pass5Tools.jsx",
+        "route": "/Pass5Tools",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:59",
+        "route": "/pass5-tools",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/Pass5Tools.jsx",
+        "route": "/Pass5Tools",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Patricia Wellington",
+    "canonicalKey": "patricia wellington",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:190",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Payment Analysis",
+    "canonicalKey": "analysis payment",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/payment-analysis"
+    ],
+    "sourceProjects": [
+      "AIDebtCollectionOptimizer",
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:323",
+        "route": "/payment-analysis",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:216",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "server/routes/reports.js:134",
+        "route": "/payment-analysis",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Payment Method",
+    "canonicalKey": "method payment",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:223",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Photos",
+    "canonicalKey": "photo",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/photos"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/adjusterField.js:77",
+        "route": "/photos",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/adjusterField.js:91",
+        "route": "/photos",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Police Report",
+    "canonicalKey": "police report",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:85",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Coverage",
+    "canonicalKey": "coverage policy",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/policy-coverage"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:199",
+        "route": "/policy-coverage",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:66",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:98",
+        "route": "/policy-coverage",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Coverage Analysis",
+    "canonicalKey": "analysis coverage policy",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:92",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Number",
+    "canonicalKey": "number policy",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:165",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Recommendation",
+    "canonicalKey": "policy recommendation",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/PolicyRecommendation",
+      "/policy-recommendation"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:24",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:57",
+        "route": "/policy-recommendation",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/PolicyRecommendation.jsx",
+        "route": "/PolicyRecommendation",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Renewals",
+    "canonicalKey": "policy renewal",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:16",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Review",
+    "canonicalKey": "policy review",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/policy-review"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:272",
+        "route": "/policy-review",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:160",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Policy Type",
+    "canonicalKey": "policy type",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:166",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:48",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:97",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Pool",
+    "canonicalKey": "pool",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "pool"
+    ],
+    "sourceProjects": [
+      "AIExpenseReportAuditor",
+      "AIForensicAccountingInvestigator",
+      "AIInsuranceClaimsAdjuster",
+      "AIInsuranceUnderwritingAgent",
+      "AiFinancialReportGenerator",
+      "aiFinancePlatform"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/aml-transaction-monitoring",
+      "financial-services/insurance-claims-adjuster",
+      "financial-services/invoice-processing"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "server/routes/batch03Gaps.js:53",
+        "route": "pool",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIForensicAccountingInvestigator",
+        "path": "backend/routes/batch03Gaps.js:53",
+        "route": "pool",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-e-signature-for-settlements.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-image-based-vehicle-damage-estimator.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-litigation-outcome-predictor.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-mobile-push-notifications-for-field.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-notifications-module-0-references.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-reserve-estimation-ai.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-subrogation-recovery-optimizer.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-webhook-surface-for-fnol-ingestion.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/gap-no-websocket-real-time-claim-feed.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-live-rating-bureau-integration-still-sca.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-ai-premium-rate-recommender.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-e-signature-for-binderspolicies.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-file-upload-for-supporting-documents.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-fraud-probability-ai.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-policy-recommendation-engine.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-renewal-prediction-model.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-risk-score-endpoint-backed-by.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-rule-optimization-analyzer.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/gap-no-webhook-surface-for-application-event.js:25",
+        "route": "pool",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/routes/batch03Gaps.js:53",
+        "route": "pool",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "aiFinancePlatform",
+        "path": "backend/routes/batch03Gaps.js:53",
+        "route": "pool",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      }
+    ]
+  },
+  {
+    "name": "Predictive Settlement Optimization",
+    "canonicalKey": "optimization predictive settlement",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/predictive-settlement-optimization"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:468",
+        "route": "/predictive-settlement-optimization",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Premium",
+    "canonicalKey": "premium",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:167",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Premium Calculator",
+    "canonicalKey": "calculator premium",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:8",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Premium Dynamism",
+    "canonicalKey": "dynamism premium",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/premium-dynamism"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/ai.js:103",
+        "route": "/premium-dynamism",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Property Water Damage",
+    "canonicalKey": "damage property water",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:71",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Q1 Claims Summary",
+    "canonicalKey": "claims q1 summary",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:258",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Quote Bind Issue",
+    "canonicalKey": "bind issue quote",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:17",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Rbac Admin",
+    "canonicalKey": "admin rbac",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:22",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Recent Alerts",
+    "canonicalKey": "alert recent",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/recent-alerts"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/fraudRingDetection.js:94",
+        "route": "/recent-alerts",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Recent Decisions",
+    "canonicalKey": "decision recent",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/recent-decisions"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/agenticUnderwriting.js:67",
+        "route": "/recent-decisions",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Region",
+    "canonicalKey": "region",
+    "aliases": [
+      "Regions"
+    ],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/regions"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster",
+      "investment"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/freqtrade-merged",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "investment",
+        "path": "backend/themes/energy.py:49",
+        "route": "/regions",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:130",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Reinsurance Treaties",
+    "canonicalKey": "reinsurance treaty",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:11",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Related Claim Info",
+    "canonicalKey": "claim info related",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:224",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Renewal Optimizer",
+    "canonicalKey": "optimizer renewal",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/RenewalOptimizer",
+      "/renewal-optimizer"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:32",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:68",
+        "route": "/renewal-optimizer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/RenewalOptimizer.jsx",
+        "route": "/RenewalOptimizer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Renewals Optimization",
+    "canonicalKey": "optimization renewals",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/renewals-optimization"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/ai.js:55",
+        "route": "/renewals-optimization",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Rental Car Coverage Auto",
+    "canonicalKey": "auto car coverage rental",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:103",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Repair Estimate",
+    "canonicalKey": "estimate repair",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:87",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Reports Analytics",
+    "canonicalKey": "analytic reports",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIAuditWorkpaperAutomation",
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/audit-workpaper-automation",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAuditWorkpaperAutomation",
+        "path": "client/src/components/Sidebar.js:24",
+        "route": "",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:15",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Reserve Estimation",
+    "canonicalKey": "estimation reserve",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/reserve-estimation"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:423",
+        "route": "/reserve-estimation",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Risk Distribution",
+    "canonicalKey": "distribution risk",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/risk-distribution"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/customViews.js:18",
+        "route": "/risk-distribution",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Risk Factor Heatmap",
+    "canonicalKey": "factor heatmap risk",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/risk-factor-heatmap"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/customViews.js:51",
+        "route": "/risk-factor-heatmap",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Risk Trajectory",
+    "canonicalKey": "risk trajectory",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/risk-trajectory"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/ai.js:28",
+        "route": "/risk-trajectory",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Robert Thompson",
+    "canonicalKey": "robert thompson",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:118",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Routing Rules",
+    "canonicalKey": "routing rule",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/routing-rules"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customViews.js:234",
+        "route": "/routing-rules",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customViews.js:250",
+        "route": "/routing-rules",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Rule Engine Optimization",
+    "canonicalKey": "engine optimization rule",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/rule-engine-optimization"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/ai.js:81",
+        "route": "/rule-engine-optimization",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Sarah Mitchell",
+    "canonicalKey": "mitchell sarah",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:209",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Satisfied Customer",
+    "canonicalKey": "customer satisfied",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:119",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Adjuster",
+    "canonicalKey": "adjuster select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:201",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Claim",
+    "canonicalKey": "claim select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:12",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:146",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:29",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:63",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Customer",
+    "canonicalKey": "customer select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:112",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:183",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Document",
+    "canonicalKey": "document select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:80",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Policy",
+    "canonicalKey": "policy select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:164",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:46",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:96",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Select Related Claim",
+    "canonicalKey": "claim related select",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:220",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Settlement Letter",
+    "canonicalKey": "letter settlement",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/settlement-letter"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/customViews.js:136",
+        "route": "/settlement-letter",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Settlement Recommendation",
+    "canonicalKey": "recommendation settlement",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/settlement-recommendation"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:149",
+        "route": "/settlement-recommendation",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:59",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/App.jsx:96",
+        "route": "/settlement-recommendation",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Severity",
+    "canonicalKey": "severity",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:270",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Small Business Commercial",
+    "canonicalKey": "business commercial small",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:54",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Smart Summary",
+    "canonicalKey": "smart summary",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation"
+    ],
+    "routes": [
+      "/smart-summary"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:357",
+        "route": "/smart-summary",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:248",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Specialization",
+    "canonicalKey": "specialization",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:203",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Storm Roof Damage",
+    "canonicalKey": "damage roof storm",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:37",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Subrogation Optimizer",
+    "canonicalKey": "optimizer subrogation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/subrogation-optimizer"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/ai.js:391",
+        "route": "/subrogation-optimizer",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Suspicious After Hours Activity",
+    "canonicalKey": "activity after hours suspicious",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:242",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Suspicious Auto Claim",
+    "canonicalKey": "auto claim suspicious",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:18",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Suspicious Wire Transfer",
+    "canonicalKey": "suspicious transfer wire",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:227",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Time Period",
+    "canonicalKey": "period time",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:131",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:238",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Top Performer",
+    "canonicalKey": "performer top",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:209",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Total Amount",
+    "canonicalKey": "amount total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:222",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Total Claims",
+    "canonicalKey": "claim total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:186",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Total Claims Handled",
+    "canonicalKey": "claims handled total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:205",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Total Policies",
+    "canonicalKey": "policy total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:185",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Total Records",
+    "canonicalKey": "record total",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:254",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Treaties",
+    "canonicalKey": "treaty",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/treaties"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/reinsurance.js:32",
+        "route": "/treaties",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/reinsurance.js:40",
+        "route": "/treaties",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Triage",
+    "canonicalKey": "triage",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/triage"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/agenticUnderwriting.js:13",
+        "route": "/triage",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Underinsured Home",
+    "canonicalKey": "home underinsured",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:173",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Underwriting Rules",
+    "canonicalKey": "rule underwriting",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/UnderwritingRules"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent",
+      "AIMortgageUnderwritingAssistant"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/carbon-credit-marketplace-verifier",
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:6",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMortgageUnderwritingAssistant",
+        "path": "client/src/pages/UnderwritingRules.jsx",
+        "route": "/UnderwritingRules",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
+      }
+    ]
+  },
+  {
+    "name": "Upcoming",
+    "canonicalKey": "upcoming",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/upcoming"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/renewalOptimizer.js:71",
+        "route": "/upcoming",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Uw Decision Pdf",
+    "canonicalKey": "decision pdf uw",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/uw-decision-pdf"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "backend/routes/customViews.js:89",
+        "route": "/uw-decision-pdf",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Uw Views",
+    "canonicalKey": "uw",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:26",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Uw Workflow",
+    "canonicalKey": "uw workflow",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/UWWorkflow",
+      "/uw-workflow"
+    ],
+    "sourceProjects": [
+      "AIInsuranceUnderwritingAgent"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/navigation.js:29",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/App.jsx:65",
+        "route": "/uw-workflow",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInsuranceUnderwritingAgent",
+        "path": "frontend/src/pages/UWWorkflow.jsx",
+        "route": "/UWWorkflow",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Vehicle Collision",
+    "canonicalKey": "collision vehicle",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:36",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Veteran Adjuster",
+    "canonicalKey": "adjuster veteran",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:211",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Water Damage Claim",
+    "canonicalKey": "claim damage water",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:19",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Workflow Action",
+    "canonicalKey": "action workflow",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/workflow-action"
+    ],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "backend/routes/claims.js:91",
+        "route": "/:id/workflow-action",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  },
+  {
+    "name": "Young Driver Auto",
+    "canonicalKey": "auto driver young",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIInsuranceClaimsAdjuster"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/insurance-claims-adjuster"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInsuranceClaimsAdjuster",
+        "path": "frontend/src/components/AISidebar.jsx:53",
+        "route": "",
+        "originApp": "financial-services/insurance-claims-adjuster"
+      }
+    ]
+  }
+]
