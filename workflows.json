@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "appId": "insurance-claims-adjuster",
+  "workflows": [
+    {
+      "id": "application-intake",
+      "title": "Insurance Application Intake",
+      "description": "Capture an application or broker submission with policy forms, loss runs, and supporting-document status.",
+      "fields": [
+        {"key": "batchReference", "label": "Intake Batch", "type": "text", "required": true},
+        {"key": "applicantName", "label": "Applicant Name", "type": "text", "required": true},
+        {"key": "submissionType", "label": "Submission Type", "type": "select", "required": true, "options": ["Direct application", "Broker submission", "Renewal", "Endorsement"]},
+        {"key": "productLine", "label": "Product Line", "type": "select", "required": true, "options": ["Commercial property", "General liability", "Workers compensation", "Auto", "Cyber"]},
+        {"key": "intakeChannel", "label": "Intake Channel", "type": "select", "required": true, "options": ["Manual", "Local upload", "Configured API"]}
+      ],
+      "states": ["draft", "validating", "needs-information", "accepted", "rejected"],
+      "transitions": [
+        {"id": "validate", "label": "Validate Submission", "from": ["draft", "needs-information"], "to": "validating"},
+        {"id": "request-info", "label": "Request Information", "from": ["validating"], "to": "needs-information"},
+        {"id": "accept", "label": "Accept Application", "from": ["validating"], "to": "accepted"},
+        {"id": "reject", "label": "Reject Application", "from": ["validating"], "to": "rejected"}
+      ],
+      "seeds": [{"id": "application-1001", "state": "draft", "batchReference": "APP-BATCH-0713", "applicantName": "Greenfield Fabrication Inc.", "submissionType": "Broker submission", "productLine": "Commercial property", "intakeChannel": "Local upload"}]
+    },
+    {
+      "id": "risk-scoring",
+      "title": "Applicant Risk Scoring",
+      "description": "Assess exposure, claims history, geography, industry, policy type, and appetite fit with human review.",
+      "fields": [
+        {"key": "applicationRef", "label": "Application Reference", "type": "text", "required": true},
+        {"key": "industry", "label": "Industry", "type": "text", "required": true},
+        {"key": "geography", "label": "Primary Geography", "type": "text", "required": true},
+        {"key": "priorClaims", "label": "Prior Claims Count", "type": "number", "required": true},
+        {"key": "scoringMode", "label": "Scoring Mode", "type": "select", "required": true, "options": ["Local rules", "Manual assessment", "Configured AI provider"]}
+      ],
+      "states": ["queued", "scored", "underwriter-review", "approved", "declined", "rework"],
+      "transitions": [
+        {"id": "score", "label": "Calculate Risk Score", "from": ["queued", "rework"], "to": "scored"},
+        {"id": "review", "label": "Start Underwriter Review", "from": ["scored"], "to": "underwriter-review"},
+        {"id": "approve", "label": "Approve Risk", "from": ["underwriter-review"], "to": "approved"},
+        {"id": "decline", "label": "Decline Risk", "from": ["underwriter-review"], "to": "declined"},
+        {"id": "rework", "label": "Request Rework", "from": ["underwriter-review"], "to": "rework"}
+      ],
+      "seeds": [{"id": "risk-run-1001", "state": "queued", "applicationRef": "APP-BATCH-0713-01", "industry": "Light manufacturing", "geography": "US Midwest", "priorClaims": 1, "scoringMode": "Local rules"}]
+    },
+    {
+      "id": "claims-packet-review",
+      "title": "Claims Packet Review",
+      "description": "Check a claim packet for completeness, coverage signals, missing documents, and adjuster next steps.",
+      "fields": [
+        {"key": "claimRef", "label": "Claim Reference", "type": "text", "required": true},
+        {"key": "lossDate", "label": "Loss Date", "type": "date", "required": true},
+        {"key": "coverageType", "label": "Coverage Type", "type": "text", "required": true},
+        {"key": "packetSource", "label": "Packet Source", "type": "select", "required": true, "options": ["Local upload", "Manual entry", "Configured claims feed"]},
+        {"key": "reviewer", "label": "Packet Reviewer", "type": "text", "required": true}
+      ],
+      "states": ["received", "checking", "incomplete", "complete", "adjuster-review"],
+      "transitions": [
+        {"id": "check", "label": "Check Packet", "from": ["received", "incomplete"], "to": "checking"},
+        {"id": "incomplete", "label": "Mark Incomplete", "from": ["checking"], "to": "incomplete"},
+        {"id": "complete", "label": "Mark Complete", "from": ["checking"], "to": "complete"},
+        {"id": "assign", "label": "Send to Adjuster", "from": ["complete"], "to": "adjuster-review"}
+      ],
+      "seeds": [{"id": "packet-review-1001", "state": "received", "claimRef": "CLM-2026-8801", "lossDate": "2026-07-06", "coverageType": "Commercial property", "packetSource": "Local upload", "reviewer": "Harper Jones"}]
+    },
+    {
+      "id": "fraud-detection",
+      "title": "Claim Fraud Signal Review",
+      "description": "Identify suspicious timing, duplicate entities, unusual patterns, and network links without auto-denying a claim.",
+      "fields": [
+        {"key": "claimRef", "label": "Claim Reference", "type": "text", "required": true},
+        {"key": "analysisMode", "label": "Analysis Mode", "type": "select", "required": true, "options": ["Local rules", "Manual review", "Configured AI provider"]},
+        {"key": "alertThreshold", "label": "Alert Threshold", "type": "number", "required": true},
+        {"key": "entityScope", "label": "Entity Scope", "type": "select", "required": true, "options": ["Claimant", "Provider", "Broker", "All related entities"]},
+        {"key": "analyst", "label": "Fraud Analyst", "type": "text", "required": true}
+      ],
+      "states": ["queued", "analyzing", "signal-found", "analyst-review", "cleared", "referred"],
+      "transitions": [
+        {"id": "analyze", "label": "Run Analysis", "from": ["queued"], "to": "analyzing"},
+        {"id": "signal", "label": "Record Fraud Signal", "from": ["analyzing"], "to": "signal-found"},
+        {"id": "review", "label": "Start Analyst Review", "from": ["signal-found"], "to": "analyst-review"},
+        {"id": "clear", "label": "Clear Signal", "from": ["analyzing", "analyst-review"], "to": "cleared"},
+        {"id": "refer", "label": "Refer for Investigation", "from": ["analyst-review"], "to": "referred"}
+      ],
+      "seeds": [{"id": "fraud-run-1001", "state": "queued", "claimRef": "CLM-2026-8801", "analysisMode": "Local rules", "alertThreshold": 75, "entityScope": "All related entities", "analyst": "Parker Adams"}]
+    },
+    {
+      "id": "document-extraction",
+      "title": "Insurance Document Extraction",
+      "description": "Extract and validate fields from applications, loss runs, binders, policies, inspections, and endorsements.",
+      "fields": [
+        {"key": "documentRef", "label": "Document Reference", "type": "text", "required": true},
+        {"key": "documentType", "label": "Document Type", "type": "select", "required": true, "options": ["Application", "Loss run", "Binder", "Policy", "Inspection", "Endorsement"]},
+        {"key": "source", "label": "Document Source", "type": "select", "required": true, "options": ["Local upload", "Manual record", "Configured repository"]},
+        {"key": "extractionMode", "label": "Extraction Mode", "type": "select", "required": true, "options": ["Local template", "Manual keying", "Configured AI provider"]},
+        {"key": "reviewer", "label": "Validation Reviewer", "type": "text", "required": true}
+      ],
+      "states": ["uploaded", "extracting", "validation", "accepted", "correction-needed", "failed"],
+      "transitions": [
+        {"id": "extract", "label": "Extract Fields", "from": ["uploaded", "failed"], "to": "extracting"},
+        {"id": "validate", "label": "Validate Fields", "from": ["extracting"], "to": "validation"},
+        {"id": "accept", "label": "Accept Extraction", "from": ["validation"], "to": "accepted"},
+        {"id": "correct", "label": "Request Correction", "from": ["validation"], "to": "correction-needed"},
+        {"id": "retry", "label": "Retry Extraction", "from": ["correction-needed"], "to": "extracting"}
+      ],
+      "seeds": [{"id": "extraction-1001", "state": "uploaded", "documentRef": "DOC-CLM8801-01", "documentType": "Policy", "source": "Local upload", "extractionMode": "Local template", "reviewer": "Harper Jones"}]
+    },
+    {
+      "id": "adjuster-summary",
+      "title": "Adjuster Claim Summary",
+      "description": "Prepare a concise, editable claim summary with coverage notes, missing information, and a recommended next action.",
+      "fields": [
+        {"key": "claimRef", "label": "Claim Reference", "type": "text", "required": true},
+        {"key": "lossSummary", "label": "Loss Summary", "type": "textarea", "required": true},
+        {"key": "coverageNotes", "label": "Coverage Notes", "type": "textarea", "required": true},
+        {"key": "missingInformation", "label": "Missing Information", "type": "textarea", "required": true},
+        {"key": "adjuster", "label": "Assigned Adjuster", "type": "text", "required": true}
+      ],
+      "states": ["draft", "generated", "adjuster-review", "approved", "revision-needed"],
+      "transitions": [
+        {"id": "generate", "label": "Generate Draft", "from": ["draft", "revision-needed"], "to": "generated"},
+        {"id": "review", "label": "Start Adjuster Review", "from": ["generated"], "to": "adjuster-review"},
+        {"id": "approve", "label": "Approve Summary", "from": ["adjuster-review"], "to": "approved"},
+        {"id": "revise", "label": "Request Revision", "from": ["adjuster-review"], "to": "revision-needed"}
+      ],
+      "seeds": [{"id": "summary-1001", "state": "draft", "claimRef": "CLM-2026-8801", "lossSummary": "Water damage reported at the insured manufacturing location.", "coverageNotes": "Property coverage appears active; deductible confirmation is pending.", "missingInformation": "Final mitigation invoice and signed proof of loss.", "adjuster": "Cameron Reed"}]
+    },
+    {
+      "id": "coverage-validation",
+      "title": "Policy Coverage Validation",
+      "description": "Compare claim facts against policy terms, limits, exclusions, endorsements, and effective dates for human decision.",
+      "fields": [
+        {"key": "claimRef", "label": "Claim Reference", "type": "text", "required": true},
+        {"key": "policyRef", "label": "Policy Reference", "type": "text", "required": true},
+        {"key": "lossDate", "label": "Loss Date", "type": "date", "required": true},
+        {"key": "coverageQuestion", "label": "Coverage Question", "type": "textarea", "required": true},
+        {"key": "reviewer", "label": "Coverage Reviewer", "type": "text", "required": true}
+      ],
+      "states": ["queued", "validating", "findings-ready", "legal-review", "confirmed", "not-confirmed"],
+      "transitions": [
+        {"id": "validate", "label": "Run Validation", "from": ["queued"], "to": "validating"},
+        {"id": "findings", "label": "Save Findings", "from": ["validating"], "to": "findings-ready"},
+        {"id": "legal", "label": "Request Legal Review", "from": ["findings-ready"], "to": "legal-review"},
+        {"id": "confirm", "label": "Confirm Coverage", "from": ["findings-ready", "legal-review"], "to": "confirmed"},
+        {"id": "decline", "label": "Record Coverage Not Confirmed", "from": ["findings-ready", "legal-review"], "to": "not-confirmed"}
+      ],
+      "seeds": [{"id": "coverage-1001", "state": "queued", "claimRef": "CLM-2026-8801", "policyRef": "POL-CMP-4420", "lossDate": "2026-07-06", "coverageQuestion": "Confirm water-damage coverage, applicable deductible, limits, and exclusions.", "reviewer": "Robin Foster"}]
+    },
+    {
+      "id": "decision-audit-trail",
+      "title": "Insurance Decision Audit Trail",
+      "description": "Record recommendations, underwriting decisions, claim actions, overrides, approvals, and user rationale.",
+      "fields": [
+        {"key": "decisionRef", "label": "Decision Reference", "type": "text", "required": true},
+        {"key": "decisionType", "label": "Decision Type", "type": "select", "required": true, "options": ["Underwriting", "Claim action", "Coverage", "Fraud referral", "Override"]},
+        {"key": "recommendation", "label": "System Recommendation", "type": "textarea", "required": true},
+        {"key": "actor", "label": "Decision Actor", "type": "text", "required": true},
+        {"key": "rationale", "label": "User Rationale", "type": "textarea", "required": true}
+      ],
+      "states": ["recorded", "supervisor-review", "approved", "overridden", "finalized"],
+      "transitions": [
+        {"id": "review", "label": "Submit for Supervisor Review", "from": ["recorded"], "to": "supervisor-review"},
+        {"id": "approve", "label": "Approve Decision", "from": ["supervisor-review"], "to": "approved"},
+        {"id": "override", "label": "Record Override", "from": ["supervisor-review"], "to": "overridden"},
+        {"id": "finalize", "label": "Finalize Event", "from": ["approved", "overridden"], "to": "finalized"}
+      ],
+      "seeds": [{"id": "decision-1001", "state": "recorded", "decisionRef": "DEC-CLM8801-01", "decisionType": "Claim action", "recommendation": "Request remaining proof-of-loss documentation before setting final reserve.", "actor": "Cameron Reed", "rationale": "The current packet lacks two documents required for a supportable reserve decision."}]
+    }
+  ],
+  "resources": [
+    {"name": "application_intake_batches", "type": "table", "workflowId": "application-intake"},
+    {"name": "application_documents", "type": "table", "workflowId": "application-intake"},
+    {"name": "risk_scores", "type": "table", "workflowId": "risk-scoring"},
+    {"name": "risk_score_factors", "type": "table", "workflowId": "risk-scoring"},
+    {"name": "claims_packet_reviews", "type": "table", "workflowId": "claims-packet-review"},
+    {"name": "claims_packet_findings", "type": "table", "workflowId": "claims-packet-review"},
+    {"name": "fraud_alerts", "type": "table", "workflowId": "fraud-detection"},
+    {"name": "fraud_indicators", "type": "table", "workflowId": "fraud-detection"},
+    {"name": "entity_links", "type": "table", "workflowId": "fraud-detection"},
+    {"name": "document_extractions", "type": "table", "workflowId": "document-extraction"},
+    {"name": "extracted_fields", "type": "table", "workflowId": "document-extraction"},
+    {"name": "adjuster_summaries", "type": "table", "workflowId": "adjuster-summary"},
+    {"name": "adjuster_actions", "type": "table", "workflowId": "adjuster-summary"},
+    {"name": "coverage_validations", "type": "table", "workflowId": "coverage-validation"},
+    {"name": "coverage_findings", "type": "table", "workflowId": "coverage-validation"},
+    {"name": "decision_audit_events", "type": "table", "workflowId": "decision-audit-trail"},
+    {"name": "decision_overrides", "type": "table", "workflowId": "decision-audit-trail"}
+  ]
+}
